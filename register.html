@@ -70,7 +70,90 @@
 
             </fieldset>
 
-                    </form>
+            <!-- Section 2: Course Selection -->
+            <fieldset>
+                <legend>2. Course & Batch Details</legend>
+
+                <div class="form-field">
+                    <label for="course">Select Course: *</label>
+                    <select id="course" name="course" required>
+                        <option value="">-- Select a Course --</option>
+                        <option value="web_dev">CS-101: Web Development Basics</option>
+                        <option value="html_css">CS-102: HTML & CSS Styling</option>
+                        <option value="dbms">CS-103: Database Management</option>
+                        <option value="c_lang">CS-104: C Programming</option>
+                        <option value="workshop">CS-105: Weekend Design Workshop</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="education">Highest Qualification: *</label>
+                    <select id="education" name="education" required>
+                        <option value="">-- Select Qualification --</option>
+                        <option value="12th">Class 12th / Intermediate</option>
+                        <option value="diploma">Diploma</option>
+                        <option value="bca">BCA / B.Sc (IT / CS)</option>
+                        <option value="btech">B.Tech / B.E.</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label>Preferred Batch: *</label>
+                    <div class="radio-list">
+                        <label><input type="radio" name="batch" value="morning" required> Morning (9:00 AM - 11:00 AM)</label>
+                        <label><input type="radio" name="batch" value="evening"> Evening (4:00 PM - 6:00 PM)</label>
+                        <label><input type="radio" name="batch" value="weekend"> Weekend (Sat & Sun)</label>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label>Skills you want to learn:</label>
+                    <div class="checkbox-list">
+                        <label><input type="checkbox" name="skill" value="html"> HTML Tags</label>
+                        <label><input type="checkbox" name="skill" value="tables"> HTML Tables</label>
+                        <label><input type="checkbox" name="skill" value="forms"> HTML Forms</label>
+                        <label><input type="checkbox" name="skill" value="css"> CSS Styling</label>
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <!-- Section 3: Address & Declaration -->
+            <fieldset>
+                <legend>3. Address & Confirmation</legend>
+
+                <div class="form-field">
+                    <label for="address">Full Address: *</label>
+                    <textarea id="address" name="address" rows="3" placeholder="Enter your full residential address" required></textarea>
+                </div>
+
+                <div class="form-field">
+                    <div class="checkbox-list">
+                        <label>
+                            <input type="checkbox" name="agree" required>
+                            I confirm that the details entered above are correct to the best of my knowledge. *
+                        </label>
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <!-- Submit and Reset Buttons -->
+            <div>
+                <input type="submit" value="Submit Form" class="btn-submit">
+                <input type="reset" value="Reset" class="btn-reset">
+            </div>
+
+        </form>
+
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 BrightPath Academy. All rights reserved.</p>
+        <p>College Web Development Group Project | Group Size: 3 Students</p>
+    </footer>
+
 </body>
 </html>
