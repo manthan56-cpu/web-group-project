@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BrightPath Academy - Student Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>BrightPath Academy</h1>
+        <p>A Web Development Group Project</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="courses.html">Courses & Schedule</a>
+        <a href="register.html" class="active">Student Registration</a>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="main-wrapper">
+
+        <h2>Student Admission & Registration Form</h2>
+        <p>Please fill out this registration form to enroll for the upcoming batch. All fields marked with (*) are required.</p>
+
+        <!-- HTML Form Starts Here -->
+        <form action="#" method="post">
+
+            <!-- Section 1: Student Information -->
+            <fieldset>
+                <legend>1. Student Personal Details</legend>
+
+                <div class="form-field">
+                    <label for="fname">First Name: *</label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="lname">Last Name: *</label>
+                    <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email ID: *</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="phone">Phone Number: *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="dob">Date of Birth: *</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-field">
+                    <label>Gender: *</label>
+                    <div class="radio-list">
+                        <label><input type="radio" name="gender" value="male" required> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                    </div>
+                </div>
+
+            </fieldset>
+
+                    </form>
+    </div>
+</body>
+</html>
